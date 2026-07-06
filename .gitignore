@@ -1,0 +1,38 @@
+# Nextflow
+work/
+.nextflow/
+.nextflow.log*
+
+# Results
+results/
+
+# VSCode
+.vscode/
+*.code-workspace
+
+# Python
+__pycache__/
+*.py[cod]
+.env
+
+# R
+.Rhistory
+.RData
+.Rproj.user/
+
+# Conda
+.conda/
+env/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Large data files - never commit
+*.fastq
+*.fastq.gz
+*.bam
+*.bam.bai
+*.sam
+*.fasta
+*.fa
