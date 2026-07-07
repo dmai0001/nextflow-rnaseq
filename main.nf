@@ -12,10 +12,8 @@ include { FASTQC } from './modules/fastqc'
 /*
  * Pipeline parameters
  */
-params {
-    input: String = "data/SRR1039508.fastq.gz"
-    outdir: String = "results/"
-}
+params.input = "data/SRR1039508.fastq.gz"
+params.outdir = "results/"
 
 /*
  * Main workflow
