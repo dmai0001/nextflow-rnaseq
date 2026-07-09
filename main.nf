@@ -8,7 +8,7 @@
 
 // Import modules
 include { FASTQC } from './modules/fastqc'
-
+include { MULTIQC } from './modules/multiqc'
 /*
  * Pipeline parameters
  */
@@ -28,13 +28,22 @@ workflow {
         // Run FastQC
         FASTQC(reads_ch)
 
+        // Run MultiQC
+        MULTIQC(FASTQC.out.collect())
+
     publish:
         fastqc_results = FASTQC.out
+        multiqc_results = MULTIQC.out[0]
 }
 
 output {
     fastqc_results {
         path 'fastqc'
+        mode 'copy'
+    }
+
+    multiqc_results {
+        path 'multiqc'
         mode 'copy'
     }
 }
