@@ -1,0 +1,3 @@
+task_id	hash	native_id	name	status	exit	submit	duration	realtime	%cpu	peak_rss	peak_vmem	rchar	wchar
+1	52/de6762	8948	FASTQC (SRR1039508)	COMPLETED	0	2026-07-14 19:59:03.910	1m 41s	1m 41s	102.7%	301.2 MB	3.8 GB	1.4 GB	1.8 MB
+2	e7/328094	10587	MULTIQC	COMPLETED	0	2026-07-14 20:00:45.275	3.2s	3.1s	59.2%	86.5 MB	236.3 MB	24.5 MB	2.4 MB
